@@ -1,7 +1,8 @@
+#!/usr/bin/env bash
 
 LATEST_VERSION=$(curl -s https://api.github.com/repos/portainer/portainer/releases/latest | python -c "import sys, json; print json.load(sys.stdin)['tag_name']")
 
-echo "Versão: $LATEST_VESION"
+echo "Versão: $LATEST_VERSION"
 
 wget https://github.com/portainer/portainer/releases/download/$LATEST_VERSION/portainer-$LATEST_VERSION-linux-arm.tar.gz -O portainer.tar.gz
 
