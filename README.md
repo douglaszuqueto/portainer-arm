@@ -16,11 +16,9 @@ docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v porta
 
 ### Passo 3 - Testando
 
-Abra no seu navegador o IP da raspberry seguido da porta colocada acima. Caso deseje mudar a porta, apenas troque o 900 acima da primeira casa,
+Abra no seu navegador o IP da raspberry seguido da porta colocada acima. Caso deseje mudar a porta, apenas troque o 9000 acima da primeira casa,
 ficando desta forma: *-p 8000:9000*.
 
 ## Referências
-
-### Referências
 - [Repositório Github](https://github.com/douglaszuqueto/portainer-arm)
 - [Portainer](https://portainer.io/install.html)
