@@ -17,8 +17,8 @@ wget https://github.com/portainer/portainer/releases/download/$LATEST_VERSION/po
 
 tar -xvzf portainer.tar.gz
 
-docker build -t douglaszuqueto/portainer:raspberry-$LATEST_VERSION .
-docker build -t douglaszuqueto/portainer:latest .
+docker build -t douglaszuqueto/portainer:raspberry-$LATEST_VERSION . --no-cache
+docker build -t douglaszuqueto/portainer:latest . --no-cache
 
 docker push douglaszuqueto/portainer:raspberry-$LATEST_VERSION
 docker push douglaszuqueto/portainer:latest
